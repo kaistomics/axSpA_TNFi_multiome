@@ -178,8 +178,7 @@ with open(pycistopic_qc_commands_filename, "w") as fh:
             file=fh,
         )
 
-#run in terminal
-#cat pycistopic_qc_commands.txt | parallel -j 4 {}
+#run in terminal pycistopic_qc_commands.txt
 
 from pycisTopic.qc import get_barcodes_passing_qc_for_sample
 sample_id_to_barcodes_passing_filters = {}
